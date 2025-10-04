@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>Cycrozen Blog</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #121212; color: #f0f0f0; }
+    header { background: #1f1f1f; padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 1.8em; }
+    #password-form, #content { max-width: 800px; margin: 50px auto; padding: 20px; background: #1e1e1e; border-radius: 10px; }
+    input { padding: 8px; margin-right: 10px; }
+    button { padding: 8px 14px; background: #3f51b5; border: none; border-radius: 5px; color: white; cursor: pointer; }
+    button:hover { background: #5c6bc0; }
+    section { margin-bottom: 40px; }
+    section h2 { border-bottom: 2px solid #3f51b5; padding-bottom: 5px; }
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
+
+<header>
   <h1>🎮 Cycrozen Blog</h1>
-  <p>여기에 내가 해본 게임 기록을 적으면 됩니다!</p>
+</header>
+
+<!-- 비번 입력 폼 -->
+<div id="password-form">
+  <p>🔒 비밀번호를 입력하세요</p>
+  <input type="password" id="pw" placeholder="Password">
+  <button onclick="checkPw()">Enter</button>
+</div>
+
+<!-- 블로그 콘텐츠 -->
+<div id="content" class="hidden">
+  <section>
+    <h2>스타크래프트</h2>
+    <p>유닛 컨트롤이 승패를 좌우한다. 멀티 태스킹이 핵심.</p>
+  </section>
+
+  <section>
+    <h2>리그 오브 레전드</h2>
+    <p>라인전에서 초반 압박이 중요하다. 팀워크와 시야 장악 필수.</p>
+  </section>
+
+  <!-- 👉 새로운 글 추가 예시 -->
+  <!--
+  <section>
+    <h2>게임 제목</h2>
+    <p>여기에 감상/특징 작성</p>
+  </section>
+  -->
+</div>
+
+<script>
+  function checkPw() {
+    const input = document.getElementById("pw").value;
+    const correct = "72407240"; // 👉 원하는 비밀번호로 바꾸세요
+    if (input === correct) {
+      document.getElementById("password-form").classList.add("hidden");
+      document.getElementById("content").classList.remove("hidden");
+    } else {
+      alert("비밀번호가 틀렸습니다!");
+    }
+  }
+</script>
+
 </body>
 </html>
