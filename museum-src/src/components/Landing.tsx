@@ -27,7 +27,7 @@ export default function Landing({ onEnter }: { onEnter: () => void }) {
       </div>
       <div className="landing__content">
         <a className="landing__back" href="/">
-          ← 한국사 연습실
+          ← CYCROZEN
         </a>
         <h1 className="landing__brand">선사 박물관</h1>
         <p className="landing__tagline">

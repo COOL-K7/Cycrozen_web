@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f4c3a">
+<meta name="description" content="Ron Chernow의 Washington: A Life를 읽기 위한 고급 어휘와 문법. 예문은 원문을 옮기지 않았습니다.">
+<title>Washington 영어 학습 · CYCROZEN</title>
+<link rel="stylesheet" href="english.css">
+</head>
+<body>
+<a class="skip" href="#read">본문으로</a>
+<header>
+  <a class="brand" href="/">CYCROZEN</a>
+  <a class="museum" href="/museum/">선사 박물관</a>
+</header>
+<main>
+  <p class="kicker">Ron Chernow · Washington: A Life</p>
+  <h1>Washington 영어 학습</h1>
+  <p class="lede">전기의 문어를 읽기 위한 어휘와 문법입니다. 줄거리 대신, 반복되거나 격이 높은 말과 그 문장 틀만 다룹니다.</p>
+  <nav class="panels" aria-label="학습 내용">
+    <button type="button" data-panel="read" aria-pressed="true">읽는 법</button>
+    <button type="button" data-panel="words">어휘</button>
+    <button type="button" data-panel="grammar">문법</button>
+  </nav>
+
+  <section id="read">
+    <h2>이 책을 읽는 법</h2>
+    <p>이 페이지는 조지 워싱턴의 전기 <cite>Washington: A Life</cite>를 영어 공부용으로 읽는 자리입니다. 줄거리를 정리하지 않습니다. 문장이 막히는 지점과, 그 문장에 반복되는 말만 남겼습니다.</p>
+    <p>어려운 이유는 단어가 옛것이어서가 아닙니다. 한 문장이 사실과 평가를 같이 들고 가기 때문입니다. 본동사는 늦은 자리에 있고, 그 앞에 분사구, 절대구, 양보, 삽입이 붙습니다. 대시와 세미콜론이 많아, 마침표 전에 논평이 한 번 더 이어집니다.</p>
+    <p>어휘는 대략 이렇게 나뉩니다.</p>
+    <ul>
+      <li><strong>인품.</strong> taciturn, punctilious, equanimity처럼 성격을 규정하는 문어.</li>
+      <li><strong>정치.</strong> prerogative, faction, censure처럼 권한과 파벌을 가리키는 말.</li>
+      <li><strong>군사.</strong> redoubt, capitulation, aide-de-camp처럼 진지, 항복, 직함의 용어.</li>
+      <li><strong>감정.</strong> chagrin, mortification처럼 체면과 분노를 세분하는 명사.</li>
+      <li><strong>문체.</strong> notwithstanding, erstwhile처럼 회화에는 잘 안 나오는 표지어.</li>
+    </ul>
+    <p>회화 동의어로 바꾸면 저자의 평가가 빠집니다. punctilious는 careful이 아니고, disinterested는 uninterested이 아닙니다. 카드의 「왜 높은 말인가」를 뜻과 같이 보세요.</p>
+    <h3>연습</h3>
+    <ol>
+      <li>문장에서 주어와 본동사만 먼저 찾습니다. 앞의 분사와 절대구는 이유로 나중에 붙입니다.</li>
+      <li>기질 형용사는 어휘 덱에서 확인합니다. 한국어 한 단어로 끝내지 말고, 평가가 어느 방향인지를 남깁니다.</li>
+      <li>한 단락을 읽은 뒤, 영어를 베끼지 말고 한국어 한 문장으로만 요약합니다. 누가 어떤 태도로 무엇을 결정했는지만 남기면 됩니다.</li>
+      <li>문법 카드의 짧은 예문을 자기 소재로 한 번 더 바꿉니다. 도치, lest, 절대구문이면 충분합니다.</li>
+    </ol>
+    <p class="note">예문은 모두 패턴을 보이려고 새로 쓴 짧은 문장입니다. 책의 문장을 옮겨 적지 않았습니다.</p>
+  </section>
+
+  <section id="words" hidden>
+    <div class="toolbar">
+      <label>검색 <input id="q" type="search" placeholder="단어, 뜻, 예문" autocomplete="off"></label>
+      <button type="button" id="mask">뜻 가리기</button>
+      <p id="count" class="count" aria-live="polite"></p>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="분야"></div>
+    <p class="note">표제어는 책에서 확인한 말이고, 뜻과 예문은 학습용으로 새로 썼습니다.</p>
+    <div id="word-list" class="cards"></div>
+    <p id="empty" class="empty" hidden>해당하는 어휘가 없습니다.</p>
+  </section>
+
+  <section id="grammar" hidden>
+    <p class="note">이 산문에 실제로 쓰이는 틀만 골랐습니다. 예문은 각각 하나씩, 새로 쓴 짧은 문장입니다.</p>
+    <div id="grammar-list" class="cards"></div>
+  </section>
+</main>
+<script src="deck.js"></script>
+<script src="english.js"></script>
+</body>
+</html>
